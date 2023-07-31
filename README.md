@@ -27,3 +27,16 @@ Follow the instructions to add students, courses, record grades, and generate re
 The program uses vectors to store student and course information, allowing dynamic management of data.
 The program provides input validation for integer inputs and handles invalid inputs gracefully.
 The program calculates the average grade for each student using the recorded grades.
+
+**Code Explanation:**
+Constructors are used in the Course, Student, and GradeBook classes. They are responsible for initializing the member variables when creating objects of these classes. 
+The GradeBook class represents a grade book and manages students and courses. It has private member variables students and courses, which are vectors to store collections of Student and Course objects, respectively. The GradeBook class also provides several public member functions, such as addStudent(), addCourse(), recordGrade(), and generateReport(), to perform operations related to managing student grades. 
+•	This code defines the Course class. It has a private member variable name of type std::string to store the course name. The class has a constructor that takes a courseName parameter and initializes the name member. It also provides a public member function getName() that returns the course name. 
+•	This code defines the Student class. It has a private member variable name of type std::string to store the student name, and a private member variable grades of type std::vector<int> to store the student's grades. 
+•	The class has a constructor that takes a studentName parameter and initializes the name member. 
+•	It provides public member functions such as getName() to get the student name, addGrade() to add a grade to the student's list of grades, calculateAverage() to calculate the average of the student's grades, and getGrades() to retrieve the vector of grades. 
+•	This code defines the GradeBook class. It has private member variables students and courses, which are vectors to store the collection of students and courses, respectively. 
+•	The class provides public member functions such as addStudent() to add a new student, addCourse() to add a new course, recordGrade() to record a grade for a student in a particular course, and generateReport() to generate a report showing each student's courses, grades, and average. 
+•	The generateReport() function iterates over the students and courses, and for each student, it prints their name, the courses they are enrolled in, their grades, and their average. 
+•	This function displayMenu() is used to show the menu options to the user. It prints the available options on the screen.
+
